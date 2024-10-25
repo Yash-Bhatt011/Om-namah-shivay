@@ -26,7 +26,7 @@
 
 .bg-icon {
     background: url(../img/AdobeStock_71311295_Video_HD_Preview.mov_1726728847413-ezgif.com-video-to-gif-converter.gif) center center repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
 
@@ -88,13 +88,13 @@
 .fixed-top {
     color: rgb(27, 94, 167);
     transition: .5s;
-    
+
 }
 
 .top-bar {
     height: 45px;
     border-bottom: 50px solid rgba(7, 82, 128, 0.966);
-    
+
 }
 
 .navbar .dropdown-toggle::after {
@@ -104,12 +104,12 @@
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
-    
+
 }
 
 .navbar .navbar-nav .nav-link {
     padding: 25px 15px;
-    color: #e9edf3;
+    color: #000000;
     font-weight: 500;
     outline: none;
 }
@@ -183,7 +183,7 @@
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -348,7 +348,6 @@
 }
 
 .footer .btn.btn-link {
-    display: block;
     margin-bottom: 5px;
     padding: 0;
     text-align: left;
@@ -386,6 +385,7 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
 .imgfluid {
     width: 100px;
     height: 100px;
@@ -393,22 +393,24 @@
     animation-name: spin;
     animation-duration: 5000ms;
     animation-iteration-count: infinite;
-    animation-timing-function: linear; 
+    animation-timing-function: linear;
     /* transform: rotate(3deg); */
-     /* transform: rotate(0.3rad);/ */
-     /* transform: rotate(3grad); */ 
-     /* transform: rotate(.03turn);  */
-  }
-  
-  @keyframes spin {
-      from {
-          transform:rotate(0deg);
-      }
-      to {
-          transform:rotate(360deg);
-      }
-  }
-  .navlogo { 
+    /* transform: rotate(0.3rad);/ */
+    /* transform: rotate(3grad); */
+    /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navlogo {
     width: 50x;
     height: 50px;
     position: relative;
@@ -434,18 +436,41 @@
     font-size: 20px;
 }
 
-.front  { transform: rotateY(0deg) translateZ(100px); }
-.back   { transform: rotateY(180deg) translateZ(100px); }
-.left   { transform: rotateY(-90deg) translateZ(100px); }
-.right  { transform: rotateY(90deg) translateZ(100px); }
-.top    { transform: rotateX(90deg) translateZ(100px); }
-.bottom { transform: rotateX(-90deg) translateZ(100px); }
+.front {
+    transform: rotateY(0deg) translateZ(100px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}
 
 @keyframes rotate {
-    0% { transform: rotateY(0deg); }
-    100% { transform: rotateY(360deg); }
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
 }
-.navlogo2 { 
+
+.navlogo2 {
     width: 50x;
     height: 50px;
     position: relative;
@@ -471,17 +496,40 @@
     font-size: 20px;
 }
 
-.front  { transform: rotateY(0deg) translateZ(100px); }
-.back   { transform: rotateY(180deg) translateZ(100px); }
-.left   { transform: rotateY(-90deg) translateZ(100px); }
-.right  { transform: rotateY(90deg) translateZ(100px); }
-.top    { transform: rotateX(90deg) translateZ(100px); }
-.bottom { transform: rotateX(-90deg) translateZ(100px); }
+.front {
+    transform: rotateY(0deg) translateZ(100px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}
 
 @keyframes rotate {
-    0% { transform: rotateY(0deg); }
-    100% { transform: rotateY(360deg); }
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
 }
+
 .open {
     width: 473px;
     margin: 0 auto;
@@ -489,9 +537,13 @@
     display: inline-flex;
     animation-name: open;
 }
+
 @keyframes open {
-    from { width: 0 }
+    from {
+        width: 0
+    }
 }
+
 .fi {
     display: flex;
     justify-content: center;
@@ -505,28 +557,36 @@
 }
 
 .fi i {
-    font-size: 24px; /* Adjust the icon size as needed */
+    font-size: 24px;
+    /* Adjust the icon size as needed */
 }
 
 /* Optional: Adjust icon size for smaller screens */
 @media (max-width: 768px) {
     .fi i {
-        font-size: 20px; /* Reduce icon size for smaller screens */
+        font-size: 20px;
+        /* Reduce icon size for smaller screens */
     }
 }
 
-    .navlogo-container {
-        text-align: center; /* This will center the image horizontally */
-    }
-    
-    .navlogo3 {
-        height: 150px; /* Same height as before */
-        max-width: 100%; /* Ensure responsiveness if needed */
-        display: inline-block; /* Makes sure it's centered properly in the text-align center */
-    }
-    .cut{
-        border-radius: 25px;
-    }
-.cus{
-    text-shadow:0px 3px 10px #4894dc; 
+.navlogo-container {
+    text-align: center;
+    /* This will center the image horizontally */
+}
+
+.navlogo3 {
+    height: 150px;
+    /* Same height as before */
+    max-width: 100%;
+    /* Ensure responsiveness if needed */
+    display: inline-block;
+    /* Makes sure it's centered properly in the text-align center */
+}
+
+.cut {
+    border-radius: 25px;
+}
+
+.cus {
+    text-shadow: 0px 3px 10px #4894dc;
 }
